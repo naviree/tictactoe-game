@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Mandali|Raleway:900&display=swap");
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Mandali, sans-serif;
+	background-color: #9fe2bf;
+	font-weight: 800;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.board {
+	border: 2px solid #000;
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	margin-bottom: 20px;
+}
+
+.cell {
+	background-color: #afe1af;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+
+.cell:hover {
+	background-color: #9fe2bf;
+	cursor: pointer;
+}
+
+#reset-button {
+	padding: 10px 20px;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 10%;
+}
+
+#winner {
+	font-size: 1.6em;
+	padding-bottom: 30px;
+}
